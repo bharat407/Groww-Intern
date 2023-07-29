@@ -5,8 +5,6 @@ import PhotoFeed from "../app/components/Home";
 export default function Home() {
   return (
     <div>
-      <Header />
-      <br></br>
       <div>
         <PhotoFeed />
       </div>

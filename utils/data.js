@@ -7,7 +7,7 @@ const UNSPLASH_BASE_URL = "https://api.unsplash.com";
 export const fetchRandomPhotos = async () => {
   try {
     const response = await fetch(
-      `${UNSPLASH_BASE_URL}/photos/random?count=100&client_id=${UNSPLASH_API_KEY}`
+      `${UNSPLASH_BASE_URL}/photos/random?count=10&client_id=${UNSPLASH_API_KEY}`
     );
     if (!response.ok) {
       throw new Error("Failed to fetch random photos");
@@ -35,7 +35,7 @@ export const fetchUserData = async (username) => {
       `${UNSPLASH_BASE_URL}/users/${username}?client_id=${UNSPLASH_API_KEY}`
     );
 
-    console.log(response.data); // Log the API response to the console
+    console.log(response.data); 
 
     return response.data;
   } catch (error) {

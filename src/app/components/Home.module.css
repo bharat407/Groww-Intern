@@ -9,17 +9,16 @@
   font-size: 24px;
   display: flex;
   align-items: center;
+  margin-right: 5px;
 }
 
 .eye > svg,
 .downloadicon > svg {
   color: #98a4ff;
-  margin-right: 5px;
 }
 
 .FillHeart > svg {
   color: #d25338;
-  margin-right: 5px; /* Add a small margin between the heart icon and the number of likes */
 }
 
 .Stats > svg {
@@ -30,19 +29,17 @@
 .AiFillHeart,
 .views,
 .downloads {
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 18px;
 }
 
 .views,
 .downloads {
   color: #98a4ff;
-  font-size: 18px;
 }
 
 .AiFillHeart {
   color: #d25338;
-  font-size: 18px;
 }
 
 .ListContainer {
@@ -69,17 +66,9 @@
   filter: brightness(1.2);
 }
 
-.ProfileName {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 8px;
-  text-decoration: none;
-}
-
 .UserLocation {
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
   text-align: end;
   font-size: large;
   margin-top: 3px;
@@ -87,14 +76,12 @@
 }
 
 .PhotoContainer {
-  background-color: #222222;
-  border: 2px solid #222222;
-  border-radius: 8px;
   padding: 16px;
-  transition: transform 0.2s ease-in-out;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(27, 24, 24, 0.868);
   overflow: hidden;
   width: 110%;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .PhotoContainer:hover {
@@ -104,28 +91,22 @@
 
 .ProfileLink {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   margin-bottom: 20px;
   justify-content: space-between;
   align-items: center;
 }
 
-.Username {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  /* text-transform: capitalize; */
-  margin-bottom: 8px;
-}
-
 .user {
   margin-top: 10px;
   margin-bottom: 10px;
+  color: black;
 }
+
 .ProfileBio {
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   max-width: 400px;
 }
@@ -139,7 +120,7 @@
 
 .PhotoCaption {
   font-style: italic;
-  color: #ffffff;
+  color: #fff;
   margin-top: 5px;
 }
 
@@ -148,8 +129,7 @@
   justify-content: space-between;
   margin-top: 20px;
   align-items: center;
-  color: #ffffff;
-  /* padding: 0 10px; */
+  color: #fff;
 }
 
 .StatItem {
@@ -164,12 +144,61 @@
 
 .Time {
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
   padding: 0 10px;
 }
 
+.dark-mode .location {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.light-mode .Logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5367ff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .location {
-  color: #ffffff;
-  display: flex;
-  font-size: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.light-mode .PhotoContainer {
+  background-color: #ffff;
+  color: #000;
+  border: 2px solid #ffff;
+}
+
+.dark-mode .PhotoContainer {
+  background-color: #222222;
+  border: 2px solid #222222;
+  color: #fff;
+}
+
+.Username,
+.ProfileName {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.dark-mode .Username,
+.dark-mode .ProfileName {
+  color: #fff;
+}
+
+.PhotoContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(27, 24, 24, 0.868);
 }

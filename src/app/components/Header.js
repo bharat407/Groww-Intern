@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Styles from "./Header.module.css";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const router = useRouter();
@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   const handleGoToHomePage = () => {
-    router.push('/'); // Navigate to the home page
+    router.push("/");
   };
 
   return (
@@ -31,14 +31,9 @@ const Header = () => {
       className={`${Styles.Container} ${isDarkMode ? Styles["dark-mode"] : ""}`}
     >
       <div className={Styles.growwcontainer}>
-        <span className={Styles.Logo} onClick={handleGoToHomePage}>Growwgram</span>
-        <div className={Styles.DarkMode} onClick={handleDarkModeToggle}>
-          <div
-            className={`${Styles.toggle} ${isDarkMode ? Styles.active : ""}`}
-          >
-            <div className={Styles.indicator}></div>
-          </div>
-        </div>
+        <span className={Styles.Logo} onClick={handleGoToHomePage}>
+          Growwgram
+        </span>
       </div>
     </div>
   );

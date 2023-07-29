@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { fetchUserData, fetchUserPhotos } from "../../utils/data";
 import styles from "./UserProfile.module.css";
+import '../../styles/globals.css';
 import Header from "../../src/app/components/Header";
 import { FiCamera, FiUsers, FiUserPlus, FiList, FiGrid } from "react-icons/fi";
 
@@ -84,6 +85,7 @@ const UserProfile = ({ user, photos }) => {
         </button>
       </div>
       {viewMode === "grid" && (
+         <div className={styles.GridPhotosContainer}>
         <div className={styles.GridPhotos}>
           {photos.map((photo) => (
             <img
@@ -93,7 +95,8 @@ const UserProfile = ({ user, photos }) => {
               className={styles.GridPhoto}
             />
           ))}
-        </div>
+          </div>
+          </div>
       )}
       {viewMode === "list" && (
         <div className={styles.ListPhotos}>

@@ -1,11 +1,11 @@
-
 .body {
   background-color: #121212;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: Arial, sans-serif;
   color: #ffffff;
   height: min-content;
+  box-sizing: border-box;
 }
 
 .Container {
@@ -106,14 +106,18 @@
   color: #5367ff;
 }
 
+.GridPhotosContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .GridPhotos {
   display: inline-grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-top: 24px;
-  margin-left: 12vh;
-  margin-right: 12vh;
   margin-bottom: 5vh;
+  width: 95vh;
 }
 
 .FillHeart,
@@ -126,7 +130,7 @@
 
 .FillHeart > svg {
   color: #d25338;
-  margin-right: 5px; /* Add a small margin between the heart icon and the number of likes */
+  margin-right: 5px;
 }
 
 .AiFillHeart,
@@ -176,14 +180,15 @@
 
 .GridPhoto {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.2s ease-in-out; /* Added transition for hover effect */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
 .GridPhoto:hover {
-  transform: scale(1.05); /* Added hover effect */
+  transform: scale(1.05);
 }
 
 .ListPhotos {
@@ -195,17 +200,16 @@
 }
 
 .ListPhoto {
-  /* display: flex; */
   align-items: center;
   margin-bottom: 16px;
-  padding: 16px;
+  padding: 18px;
   background-color: #222222;
   border-radius: 8px;
 }
 
 .ListPhoto img {
-  width: 45vh;
-  height: 45vh;
+  width: 50vh;
+  height: 65vh;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -213,5 +217,3 @@
 .PhotoInfo {
   color: #ffffff;
 }
-
-/* Add more CSS as needed for styling other elements */
