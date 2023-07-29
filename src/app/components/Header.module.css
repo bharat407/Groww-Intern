@@ -1,0 +1,69 @@
+/* components/Header.module.css */
+
+.Container {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  height: 80px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.growwcontainer {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5367ff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Logo:hover {
+  color: #2d44f8;
+}
+
+.DarkMode {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.toggle {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 25px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+/* Updated styles for the toggle indicator */
+.indicator {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+/* Styles for the active state of the toggle */
+.active .indicator {
+  transform: translateX(25px);
+}
+
+/* Dark mode styles */
+.dark-mode {
+  /* Add your dark mode styles here */
+  background-color:#121212;
+  color: #fff;
+}
