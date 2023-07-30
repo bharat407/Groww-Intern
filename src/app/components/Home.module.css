@@ -202,3 +202,100 @@
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(27, 24, 24, 0.868);
 }
+
+/* Media query for screens with a maximum width of 768 pixels */
+@media screen and (max-width: 768px) {
+  .Container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .ProfilePhoto {
+    height: 100px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .UserInfo {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .GridPhotosContainer {
+    display: block;
+  }
+
+  .GridPhotos {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .FillHeart,
+  .downloadicon,
+  .eye {
+    font-size: 18px;
+  }
+
+  .Stats {
+    margin-top: 10px;
+  }
+
+  .Time {
+    font-size: 12px;
+  }
+
+  .dark-mode .location,
+  .light-mode .location {
+    font-size: 20px;
+  }
+
+  .light-mode .Logo {
+    font-size: 20px;
+  }
+
+  .location {
+    font-size: 20px;
+  }
+
+  .dark-mode .PhotoContainer,
+  .light-mode .PhotoContainer {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .ProfilePhoto {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+
+  .UserLocation {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .Username,
+  .ProfileName {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .Photo {
+    height: 300px;
+  }
+
+  .ProfileBio {
+    font-size: 14px;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+}
+
+.Container {
+  max-width: 470px;
+  margin: 0 auto;
+}
